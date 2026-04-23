@@ -1,0 +1,95 @@
+.title-cover{
+    display: block;
+    top: 0;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover; 
+    object-position: center;  
+}
+
+.title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 24px;
+        width:90%;               
+        text-align: center;
+        padding-bottom: 20px;
+    }
+  }
+
+.header {
+  position: sticky;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+}
+
+.tablink {
+  background-color: #cf98e8;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 16px;
+  width: 25%;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .tablink {
+        width:50%;
+        margin:0;
+        font-size: 14px;
+        box-sizing: border-box;       
+        padding: 15px 0;   
+        display: flex;       
+        align-items: center;  
+        justify-content: center;
+        float: none;   
+    }
+  }
+#defaultOpen:hover {
+  background-color: #56bbdc;
+}
+#MCU:hover {
+  background-color: #e898bd;
+}
+#F1:hover {
+  background-color: #e98684;
+}
+#HP:hover {
+  background-color: #eba985;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 5px 20px;
+  height: 100%;
+}
+
+#Home{background-color: #56bbdc;}
+#HarryPotter{background-color: #eba985;}
+#MarvelCinematicUniverse{background-color: #e898bd;}
+#Formula1{background-color: #e98684;}
+
+
+body{
+  margin: 0;
+  font-family: Arial;
+}
